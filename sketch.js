@@ -1,7 +1,8 @@
+var rain = [];
+
 function setup(){
   createCanvas(1280, 720);
   background(53);
-  var rain = [];
   for(int i=0; i<300; i++)
     rain[i] = new drop(random(1280), 0, 20, 50, 0, -40);
 }
@@ -21,9 +22,9 @@ var drop = function(x, y, width, height, vilocityX, vilocityY){
   this.vilocityX = vilocityX;
   this.vilocityY = vilocityY;
   this.draw = function(){
-    x += vilocityX;
-    y += vilocityY;
-    if(y<-720)this.y = 0;
-    rect(x, y, width, height);
+    this.x += this.vilocityX;
+    this.y += this.vilocityY;
+    if(this.y<-720)this.y = 0;
+    rect(this.x, tvis.y, this.width, this.height);
   }
 }
