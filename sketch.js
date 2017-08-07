@@ -25,6 +25,7 @@ function setup(){
 function draw(){
   background(53);
   fill(255);
+  noStroke();
   for(var i=0; i<300; i++)
     rain[i].draw();
 }
