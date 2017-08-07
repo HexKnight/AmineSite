@@ -19,12 +19,12 @@ var rain = [];
 function setup(){
   createCanvas(1280, 720);
   for(var i=0; i<300; i++)
-    rain[i] = new drop(random(1280), 0, 15, 40, 0, random(30)+20);
+    rain[i] = new drop(random(1280), 0, 15, 40, 0, random(40)+20);
 }
 
 function draw(){
   background(53);
-  fill(255);
+  fill(255, 255, 255, 150);
   noStroke();
   for(var i=0; i<300; i++)
     rain[i].draw();
