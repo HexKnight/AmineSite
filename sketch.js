@@ -21,9 +21,9 @@ var drop = function(x, y, width, height, vilocityX, vilocityY){
   this.vilocityX = vilocityX;
   this.vilocityY = vilocityY;
   this.draw = function(){
-    this.x += this.vilocityX;
-    this.y += this.vilocityY;
-    if(this.y<-height)this.y = 0;
-    rect(this.x, this.y, this.width, this.height);
+    x += vilocityX;
+    y += vilocityY;
+    if(y<-1280)this.y = 0;
+    rect(x, y, width, height);
   }
 }
