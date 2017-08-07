@@ -19,7 +19,7 @@ var rain = [];
 function setup(){
   createCanvas(1280, 720);
   for(var i=0; i<300; i++)
-    rain[i] = new drop(random(1280), 0, 20, 50, 0, 40);
+    rain[i] = new drop(random(1280), 0, 15, 40, 0, random(30)+20);
 }
 
 function draw(){
