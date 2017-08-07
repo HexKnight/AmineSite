@@ -5,13 +5,14 @@ function drop(x, y, width, height, vilocityX, vilocityY){
   this.height = height;
   this.vilocityX = vilocityX;
   this.vilocityY = vilocityY;
-  this.draw = function(){
+}
+
+drop.prototype.draw = function(){
     this.x += this.vilocityX;
     this.y += this.vilocityY;
     if(this.y<-720)this.y = 0;
     rect(this.x, this.y, this.width, this.height);
   }
-}
 
 var rain = [];
 
@@ -24,7 +25,6 @@ function setup(){
 
 function draw(){
   fill(255);
-  strokeWieght(3);
   for(int i=0; i<300; i++)
     rain[i].draw();
 }
