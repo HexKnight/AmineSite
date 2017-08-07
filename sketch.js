@@ -14,7 +14,7 @@ function draw(){
     rain[i].draw();
 }
 
-var drop = function(x, y, width, height, vilocityX, vilocityY){
+function drop(x, y, width, height, vilocityX, vilocityY){
   this.x = x;
   this.h = y;
   this.width = width;
