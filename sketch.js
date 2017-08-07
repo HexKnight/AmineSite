@@ -3,7 +3,7 @@ function setup(){
   background(53);
   var rain = [];
   for(int i=0; i<300; i++)
-    rain[i] = new drop(random(width), 0, 20, 50, 0, -40);
+    rain[i] = new drop(random(width), -600, 20, 50, 0, -40);
 }
 
 function draw(){
