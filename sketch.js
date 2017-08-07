@@ -20,7 +20,7 @@ function setup(){
   createCanvas(1280, 720);
   background(53);
   for(int i=0; i<300; i++)
-    rain[i] = new drop(random(1280), 0, 20, 50, 0, -40);
+    rain[i] = new drop(Random(1280), 0, 20, 50, 0, -40);
 }
 
 function draw(){
