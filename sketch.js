@@ -1,6 +1,6 @@
 function drop(x, y, width, height, vilocityX, vilocityY){
   this.x = x;
-  this.h = y;
+  this.y = y;
   this.width = width;
   this.height = height;
   this.vilocityX = vilocityX;
