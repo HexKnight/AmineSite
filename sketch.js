@@ -1,3 +1,18 @@
+function drop(x, y, width, height, vilocityX, vilocityY){
+  this.x = x;
+  this.h = y;
+  this.width = width;
+  this.height = height;
+  this.vilocityX = vilocityX;
+  this.vilocityY = vilocityY;
+  this.draw = function(){
+    this.x += this.vilocityX;
+    this.y += this.vilocityY;
+    if(this.y<-720)this.y = 0;
+    rect(this.x, tvis.y, this.width, this.height);
+  }
+}
+
 var rain = [];
 
 function setup(){
@@ -12,19 +27,4 @@ function draw(){
   strokeWieght(3);
   for(int i=0; i<300; i++)
     rain[i].draw();
-}
-
-function drop(x, y, width, height, vilocityX, vilocityY){
-  this.x = x;
-  this.h = y;
-  this.width = width;
-  this.height = height;
-  this.vilocityX = vilocityX;
-  this.vilocityY = vilocityY;
-  this.draw = function(){
-    this.x += this.vilocityX;
-    this.y += this.vilocityY;
-    if(this.y<-720)this.y = 0;
-    rect(this.x, tvis.y, this.width, this.height);
-  }
 }
