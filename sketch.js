@@ -20,7 +20,7 @@ var drop = function(x, y, width, height, vilocityX, vilocityY){
   this.height = height;
   this.vilocityX = vilocityX;
   this.vilocityY = vilocityY;
-  draw : function(){
+  this.draw = function(){
     this.x += this.vilocityX;
     this.y += this.vilocityY;
     if(this.y<-height)this.y = 0;
